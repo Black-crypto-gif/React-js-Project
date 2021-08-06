@@ -1,27 +1,33 @@
 import React from 'react'
 import "./App.css"
+import swal from 'sweetalert'
 
 function NavBar() {
+    const handClick = () => {
+
+        swal("Good job!", "You clicked the button!", "success");
+    }
+    
     return (
         <div>
         
           <header class="header">
                     <nav class="navbar">
-                        <a href="#" class="nav-logo"><img src="https://image.flaticon.com/icons/png/512/1940/1940569.png" alt="logo" /></a>
+                        <a href="#fff" class="nav-logo"><img src="https://image.flaticon.com/icons/png/512/1940/1940569.png" alt="logo" /></a>
                         <ul class="nav-menu">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Services</a>
+                                <a href="#ff" class="nav-link">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Blog</a>
+                                <a href="#fff" class="nav-link">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">About</a>
+                                <a href="#fff" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Contact</a>
+                                <a href="#paragraphs" class="nav-link">Contact</a>
                             </li>
-                            <button className="btn-log-in">Login</button>
+                            <button onClick={handClick} className="btn-log-in" >Login</button>
                         </ul>
                         <div class="hamburger">
                             <span class="bar"></span>

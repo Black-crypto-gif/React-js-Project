@@ -1,7 +1,21 @@
-/* .App {
+.App {
   text-align: center;
+  width: 200px;
+  height: 100px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  background-color:rgb(250, 0, 0);
+  border-radius:15px;
+  transition: 0.9s ease-in-out;
+  margin-top: 50px;
+  
 }
-
+.App:hover{
+  background-color: rgb(108, 108, 255);
+  color: white;
+}
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
