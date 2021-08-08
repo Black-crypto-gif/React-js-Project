@@ -5,7 +5,7 @@ import swal from 'sweetalert'
 function NavBar() {
     const handClick = () => {
 
-        swal("Good job!", "You clicked the button!", "success");
+        /*swal("Good job!", "You clicked the button!", "success");*/
     }
     
     return (

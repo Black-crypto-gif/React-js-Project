@@ -15,6 +15,34 @@
   background-color: rgb(108, 108, 255);
   color: white;
 }
+.article1{
+  text-align: center;
+  
+
+}
+span.title{
+
+  font-weight: bold;
+  color: #482ff7;
+  font-size: 50px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+p.description{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px;
+
+}
+p.description:hover{
+  text-decoration: underline;
+}
+span.title:hover{
+  border-top: 5px solid black;
+}
+span.num{
+  font-size: 100px;
+  font-weight: bold;
+}
 /* 
 .App-logo {
   height: 40vmin;
