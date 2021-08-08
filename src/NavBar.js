@@ -1,7 +1,8 @@
 import React from 'react'
 import "./App.css"
 import swal from 'sweetalert'
-import { useState} from 'react'
+import { useState, useEffect} from 'react'
+import { cleanup } from '@testing-library/react'
 
 function NavBar() {
     const [time, setTime] = useState()
@@ -9,6 +10,16 @@ function NavBar() {
         setTime(Date());
         swal("Good job!", "You clicked the button!", "success");
     }
+    const [windowWidth, setWidth] = useState(window.innerWidth);
+
+    const handlResize = () => {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handlResize)
+        
+
+    },[])
     
     return (
         <div>
@@ -20,7 +31,7 @@ function NavBar() {
                             <span style={{ 
                                 color:"red",
                                 fontSize:"20px",
-                            }}> {time} </span>
+                            }}> {windowWidth} </span>
                             <li class="nav-item">
                                 <a href="#ff" class="nav-link">Services</a>
                             </li>

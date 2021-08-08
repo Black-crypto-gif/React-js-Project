@@ -172,7 +172,7 @@ a {
   color: #482ff7;
   transition:0.9s ease-in-out;
 }
-
+/*
 @media only screen and (max-width: 768px) {
   .nav-menu {
       position: fixed;
@@ -201,7 +201,7 @@ a {
       cursor: pointer;
   }
 
-}
+}*/
 .btn-log-in{
   margin-left: 25px;
   margin-right: 25px;
