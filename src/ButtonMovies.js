@@ -1,5 +1,5 @@
 import React from 'react'
-import swal from 'sweetalert'
+
 import "./App.css"
 import { useState } from 'react'
 
